@@ -1,4 +1,4 @@
-import '../style/main.css'
+
 
 function Feature({ icon, altIcon, title, text }) {
     return (
