@@ -1,5 +1,4 @@
 
-
 function Feature({ icon, altIcon, title, text }) {
     return (
         <div className='feature-item'>
