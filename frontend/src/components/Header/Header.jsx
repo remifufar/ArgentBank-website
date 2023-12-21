@@ -1,9 +1,9 @@
 import React, { useState, useEffect} from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import argentBankLogo from '../assets/argentBankLogo.webp';
+import argentBankLogo from '../../assets/argentBankLogo.webp';
 import { useDispatch, useSelector } from 'react-redux';
-import { userService } from '../../src/api/api';
-import { setUser } from "../../src/redux/reducer/userreducer";
+import { userService } from '../../api/api';
+import { setUser } from "../../redux/reducer/userreducer";
 
 function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

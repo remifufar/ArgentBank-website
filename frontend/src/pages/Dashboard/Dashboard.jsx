@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setUser } from '../../src/redux/reducer/userreducer';
-import EditForm from '../../src/components/form';
-import Account from "../components/account";
+import { setUser } from '../../redux/reducer/userreducer';
+import EditForm from '../../components/Form/Form';
+import Account from "../../components/Account/Account";
 function Dashboard() {
   const { userName, firstName, lastName } = useSelector((state) => state.profile);
   const dispatch = useDispatch();

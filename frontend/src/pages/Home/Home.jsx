@@ -1,7 +1,7 @@
-import Feature from '../components/Feature'
-import ChatIcon from "../assets/icon-chat.webp"
-import MoneyIcon from "../assets/icon-money.webp"
-import ShieldIcon from "../assets/icon-security.webp"
+import Feature from '../../components/Feature/Feature'
+import ChatIcon from "../../assets/icon-chat.webp"
+import MoneyIcon from "../../assets/icon-money.webp"
+import ShieldIcon from "../../assets/icon-security.webp"
 
 
 function Home() {
