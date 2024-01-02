@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { FaUserCircle } from "react-icons/fa";
 function SignIn() {
   const [formData, setFormData] = useState({
     email: '',
@@ -39,7 +39,7 @@ function SignIn() {
   return (
     <main className="main bg-dark">
       <section className="sign-in-content">
-        <i className="fa fa-user-circle sign-in-icon"></i>
+      <FaUserCircle className='iconCo'/>
         <h1>Sign In</h1>
         <form>
           <div className="input-wrapper">

@@ -4,6 +4,8 @@ import argentBankLogo from '../../assets/argentBankLogo.webp';
 import { useDispatch, useSelector } from 'react-redux';
 import { userService } from '../../api/api';
 import { setUser } from "../../redux/reducer/userreducer";
+import { FaUserCircle } from "react-icons/fa";
+import { PiSignOutBold } from "react-icons/pi";
 
 function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -38,19 +40,19 @@ function Header() {
           alt="Argent Bank Logo"
         />
       </NavLink>
-      <div>
+      <div className='nav-logo'>
         {isLoggedIn ? (
           <>
         <NavLink 
           to="/Dashboard"
           className="main-nav-item">
-          <i className="fa fa-user-circle"></i>
+          <FaUserCircle className='iconCo' />
           {userName}
         </NavLink>
         <NavLink
         to="/sign-in" 
         onClick={handleSignOut}>
-          <i className="fa fa-sign-out"></i>
+          <PiSignOutBold className='iconCo'/>
         Sign Out
         </NavLink>
         </>
@@ -59,7 +61,7 @@ function Header() {
             className="main-nav-item" 
             to="/sign-in"
             >
-            <i className="fa fa-user-circle"></i>
+            <FaUserCircle className='iconCo'/>
             Sign In
           </NavLink>
         )}
