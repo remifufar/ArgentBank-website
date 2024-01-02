@@ -3,7 +3,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setUser } from '../../redux/reducer/userreducer';
 import EditForm from '../../components/Form/Form';
 import Account from "../../components/Account/Account";
+
+
+ 
 function Dashboard() {
+ 
   const { userName, firstName, lastName } = useSelector((state) => state.profile);
   const dispatch = useDispatch();
 
@@ -22,7 +26,7 @@ function Dashboard() {
   const handleCancelEdit = () => {
     setIsEditing(true);
   };
-
+ 
   return (
     <main className="main bg-dark">
       <div className="header">
